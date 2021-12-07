@@ -51,6 +51,22 @@ class Layout {
           "isFavourite": true
         }),
         new MenuItem({
+          "name": "Tutorial",
+          "type": "button",
+          "icon": "bytesize:user",
+          "helpingAttribute": "/tutorial",
+          "customTitle": "Tutorial",
+          "isFavourite": true
+        }),
+        new MenuItem({
+          "name": "Prac",
+          "type": "button",
+          "icon": "bytesize:user",
+          "helpingAttribute": "/prac",
+          "customTitle": "Prac",
+          "isFavourite": true
+        }),
+        new MenuItem({
           "name": "Logout",
           "type": "logout",
           "icon": "fe:logout",

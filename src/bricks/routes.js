@@ -8,6 +8,7 @@ import PropTypes from 'prop-types';
 import { useContext } from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import { AuthCallback, Example, FourOFour, Home, Login, MobileMenu, Register, UsersManager } from 'views';
+import { Prac, Tutorial } from 'views/index';
 import { Layout } from './layout';
 
 
@@ -72,6 +73,16 @@ export const AppRoutes = (props) => {
           <Layout> <Example  {...props} /></Layout>
         </AuthRoute>}
       />
+      <Route exact path='/tutorial' element={
+        <AuthRoute redirectTo='/login' loginStatus={loginStatus} parentProps={props}>
+          <Layout> <Tutorial  {...props} /></Layout>
+        </AuthRoute>}
+      />
+      <Route exact path='/prac' element={
+        <AuthRoute redirectTo='/login' loginStatus={loginStatus} parentProps={props}>
+          <Layout> <Prac  {...props} /></Layout>
+        </AuthRoute>}
+      />
       <Route exact path='/users' element={
         <AuthRoute redirectTo='/login' loginStatus={loginStatus} parentProps={props}>
           <Layout> <UsersManager  {...props} /></Layout>
@@ -82,6 +93,7 @@ export const AppRoutes = (props) => {
           <Layout> <FourOFour  {...props} /></Layout>
         </AuthRoute>}
       />
+      
     </Routes >
   );
 };
