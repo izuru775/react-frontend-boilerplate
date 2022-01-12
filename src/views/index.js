@@ -10,7 +10,7 @@ import { MobileMenu } from "./dependants/mobileMenu/mobileMenu";
 import { Example } from "./dependants/Example/Example";
 import { UsersManager } from "./dependants/UsersManager/UsersManager";
 import { Tutorial } from "./dependants/Tutorial/tutorial";
-import { Prac } from "./dependants/Prac/prac";
+import { VR } from "./dependants/VR/VR";
 
 export {
   Example,
@@ -22,5 +22,5 @@ export {
   AuthCallback,
   UsersManager,
   Tutorial,
-  Prac,
+  VR,
 };

@@ -59,11 +59,11 @@ class Layout {
           "isFavourite": true
         }),
         new MenuItem({
-          "name": "Prac",
+          "name": "VR",
           "type": "button",
           "icon": "bytesize:user",
-          "helpingAttribute": "/prac",
-          "customTitle": "Prac",
+          "helpingAttribute": "/VR",
+          "customTitle": "VR",
           "isFavourite": true
         }),
         new MenuItem({
